@@ -1,0 +1,19 @@
+.board{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;     
+}
+
+.bingo-item{
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border:2px solid rgba(155, 155, 155,1.0);
+    border-radius: 50%;
+}
