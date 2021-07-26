@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bingo Board</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script defer src="index.js"></script>
-</head>
+    <script defer src="script.js"></script>
+  </head>
   <body>
-    <header>
-      <h1>Lets Bingo!!!</h1>
-      <button id="randomize">Randomize numbers</button>
-    </header>
-      <main>
-        <div id="bingo-container">
-          <div id="bingo__main" class="board"></div>
-        </div>
-      </main>
-  <!--
+    <header class="bingo-header"><h1>Let's Bingo</h1></header>
+    <main class="bingo-container">
+      <div class="bingo-main_board"></div>
+      <div class="bingo-number">
+        <h3>Bingo Number</h3>
+        <h4>5</h4>
+      </div>
+    </main>
+    <!--
         BINGO CHALLENGE!!!
         + Create programmatically (with JS) a BINGO board with 76 cells, from 1 to 76.
         Create a button to randomize a number from 1 to 76. The same number should be highlighted on the bingo board
