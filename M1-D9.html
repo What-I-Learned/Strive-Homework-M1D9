@@ -32,10 +32,38 @@
     <header class="bingo-header"><h1>Let's Bingo</h1></header>
     <main class="bingo-container">
       <div class="bingo-main_board"></div>
-      <div class="bingo-number">
-        <h3>Bingo Number</h3>
-        <h4>5</h4>
+      <div class="bingo-options">
+        <div class="bingo-number">
+          <h3>Roll for Bingo</h3>
+          <h4></h4>
+        </div>
+        <div class="bingo-user_board_input">
+          <button
+            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+          >
+            -
+          </button>
+          <input
+            class="quantity"
+            min="1"
+            name="quantity"
+            value="1"
+            max="8"
+            type="number"
+          />
+          <button
+            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+            class="plus"
+          >
+            +
+          </button>
+        </div>
+        <div id="user-board-generator" class="bingo-number">
+          <h3>Generate User Board</h3>
+        </div>
       </div>
+
+      <div class="bingo-user_board-container"></div>
     </main>
     <!--
         BINGO CHALLENGE!!!
